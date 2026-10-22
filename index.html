@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kazimali Patel | BCA IT Student Portfolio</title>
+<meta name="description" content="Portfolio of Kazimali Patel, BCA IT student at Silver Oak University, Ahmedabad. Skills in HTML/CSS, Python basics, GitHub and MS Office.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./script.js">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#home" class="logo">Kazimali<span>.</span>Patel</a>
+    <nav aria-label="Main">
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <p class="hello">Hi, I'm</p>
+      <h1>Kazimali Patel</h1>
+      <p class="role"><span id="typed"></span><span class="cursor" aria-hidden="true"></span></p>
+      <p>BCA IT student from Ahmedabad. I learn fast, build small web projects and I'm looking for my first role in IT.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">View my projects</a>
+        <a class="btn" href="#contact">Contact me</a>
+      </div>
+    </div>
+    <div class="code-card" aria-hidden="true">
+      <div class="code-top"><i></i><i></i><i></i></div>
+<pre><span class="k">const</span> kazimali = {
+  <span class="k">location</span>: <span class="s">"Ahmedabad"</span>,
+  <span class="k">studying</span>: <span class="s">"BCA IT"</span>,
+  <span class="k">university</span>: <span class="s">"Silver Oak"</span>,
+  <span class="k">skills</span>: [<span class="s">"HTML/CSS"</span>,
+    <span class="s">"Python"</span>, <span class="s">"GitHub"</span>],
+  <span class="k">openToWork</span>: <span class="s">true</span>
+};</pre>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About me</h2>
+    <div class="about-grid">
+      <div>
+        <p>I am a BCA IT student, a quick learner, and interested in technology. I enjoy turning ideas into working web pages and learning something new from every project.</p>
+        <p>I am a fresher looking for an opportunity in General IT, whether that is an internship, a junior role or a project where I can grow my skills with a team.</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><b>Ahmedabad, Gujarat</b><span>Location</span></div>
+        <div class="fact"><b>BCA IT</b><span>Silver Oak University</span></div>
+        <div class="fact"><b>Fresher</b><span>Open to General IT roles</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="chips">
+      <span class="chip">HTML &amp; CSS<small>basic</small></span>
+      <span class="chip">Python<small>basics</small></span>
+      <span class="chip">GitHub</span>
+      <span class="chip">MS Office</span>
+      <span class="chip">Communication</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="projects">
+      <article class="project">
+        <h3>IT Job Listings Website</h3>
+        <p>A website that lists IT job openings so job seekers can browse roles in one place.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>GitHub</span></div>
+        <a class="link" href="https://github.com/kazimalipatel/IT-JOB-Listing" target="_blank" rel="noopener">View on GitHub</a>
+      </article>
+      <article class="project">
+        <h3>My Recipe Book</h3>
+        <p>A personal recipe book website to save and read favourite recipes in a clean layout.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education</h2>
+    <div class="edu">
+      <h3>Bachelor of Computer Applications (BCA) in IT</h3>
+      <p>Silver Oak University, Ahmedabad</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Let's connect</h2>
+    <div class="contact-grid">
+      <ul class="contact-list">
+        <li>Email<br><a href="mailto:patelkazimali@gmail.com">patelkazimali@gmail.com</a></li>
+        <li>Phone<br><a href="tel:+918866564429">+91 88665 64429</a></li>
+        <li>LinkedIn<br><a href="https://www.linkedin.com/in/kazimali-patel-9742a9389" target="_blank" rel="noopener">linkedin.com/in/kazimali-patel</a></li>
+        <li>GitHub<br><a href="https://github.com/kazimalipatel" target="_blank" rel="noopener">github.com/kazimalipatel</a></li>
+      </ul>
+      <form id="contactForm" novalidate>
+        <label>Your name<input id="name" required autocomplete="name"></label>
+        <label>Your email<input id="email" type="email" required autocomplete="email"></label>
+        <label>Message<textarea id="msg" required></textarea></label>
+        <button class="btn primary" type="submit">Send message</button>
+        <p class="note" id="formNote" role="status">This opens your email app with the message ready to send.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> Kazimali Patel</span>
+    <span>Built with HTML, CSS and JavaScript</span>
+  </div>
+</footer>
+<button class="top" id="top" aria-label="Back to top">↑</button>
+
+<script src="./script.js"></script>
+</body>
+</html>
